@@ -1,0 +1,51 @@
+.team {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+  .team--member {
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100%-60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100%-120px) / 4);
+  }
+}
+.team > :not(:last-child) {
+  margin-bottom: $main--margin;
+  @media screen and (min-width: 768px) {
+    margin-right: $main--margin;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: $main--margin;
+  }
+}
+.team__section {
+  background-color: $secondary--background;
+}
+
+.team__title {
+  font-weight: 500;
+  line-height: 1.16;
+  color: $title--color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.card__title {
+  padding-bottom: 24px;
+  background-color: $accent--text;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+// .card__title {
+//   margin-bottom: $main--margin;
+// }

@@ -1,0 +1,19 @@
+.hero__button {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  color: $accent--text;
+  background-color: $accent--color;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color $cubik 250ms;
+  margin-top: 44px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}

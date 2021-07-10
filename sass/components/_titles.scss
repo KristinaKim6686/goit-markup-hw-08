@@ -1,0 +1,36 @@
+.main__title {
+  color: $accent--text;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  font-size: 26px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    max-width: 696px;
+  }
+}
+.section__title {
+  font-size: 28px;
+  line-height: 1.17;
+  color: $title--color;
+  text-align: center;
+  margin-bottom: $main--margin;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+}
+.hidden__title {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  pad: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

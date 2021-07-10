@@ -1,0 +1,113 @@
+header {
+  background-color: $accent--text;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 1px solid #ececec;
+}
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    // & :not(:last-child) {
+    //   margin-right: 50px;
+  }
+}
+.logo {
+  color: $accent--color;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  padding: 24px 0 24px 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+
+  &__studio {
+    color: $title--color;
+  }
+}
+.nav__link {
+  color: $title--color;
+  min-width: 49px;
+  letter-spacing: 0.02em;
+  transition: color var(--cubik) 250ms;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &:focus,
+  &:hover {
+    color: $accent--color;
+    color: $accent--color;
+  }
+}
+.nav__link.current {
+  color: $accent--color;
+}
+.current {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 25px;
+    background-color: $accent--color;
+  }
+}
+
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  fill: currentColor;
+  @media screen and (min-width: 786px) {
+    display: flex;
+  }
+}
+.contacts__icons {
+  margin-right: 10px;
+}
+.contact__link {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  transition: color $cubik 250ms, fill $cubik 250ms;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &:focus,
+  &:hover {
+    color: $accent--color;
+  }
+}
+.contact__icons {
+  fill: currentColor;
+  margin-right: 10px;
+
+  &:focus,
+  &:hover {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+}
+
+.envelope,
+.phone {
+  margin-right: 10px;
+}
+.envelope {
+  width: 16px;
+  height: 12px;
+}
+.phone {
+  width: 10px;
+  height: 16px;
+}

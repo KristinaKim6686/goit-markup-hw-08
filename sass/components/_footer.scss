@@ -1,0 +1,52 @@
+footer {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+.address__section {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+.footer__studio {
+  color: $accent--text;
+}
+.footer__logo {
+  color: $accent--color;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin-bottom: 20px;
+  // font-size: 26px;
+}
+.address {
+  color: $accent--text;
+  text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+.join {
+  font-weight: 700;
+  color: var(--accent-text-color);
+  line-height: 1.172px;
+}
+
+.subscribe {
+  align-items: center;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.subscribe__title {
+  font-weight: 700;
+  color: var(--accent-text-color);
+  text-transform: uppercase;
+}
