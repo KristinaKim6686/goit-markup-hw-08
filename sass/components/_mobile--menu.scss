@@ -1,0 +1,83 @@
+.mobile-menu {
+  position: absolute;
+  background-color: $accent--text;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.mobile-menu.is-hidden {
+  display: none;
+  pointer-events: none;
+}
+.mobile__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+}
+.mobile__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile__icon {
+  fill: $title--color;
+  stroke: $title--color;
+}
+.menu-open {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  background-color: inherit;
+  border: none;
+  fill: $title--color;
+}
+.menu-close {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  background-color: inherit;
+  border: none;
+  fill: $title--color;
+}
+.mobile__nav {
+  font-size: 40px;
+  color: $title--color;
+  transition: $cubik 250ms;
+  &:focus,
+  &:hover {
+    color: $accent--color;
+  }
+}
+.mobile__contacts {
+  font-size: 34px;
+  transition: $cubik 250ms;
+  &:focus,
+  &:hover {
+    color: $accent--color;
+  }
+}
+.mobile__link {
+  font-size: 24px;
+  margin-top: 32px;
+}
+.mobile__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 18px;
+  color: $accent--color;
+  margin-top: 64px;
+}
+.mobile__links {
+  padding-right: 10px;
+  border-right: rgba(33, 33, 33, 0.2) 1px solid;
+  border-radius: 0 1px 0 0;
+}
+
+.current__mobile {
+  color: $accent--color;
+}

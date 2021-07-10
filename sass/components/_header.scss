@@ -5,26 +5,37 @@ header {
   justify-content: space-between;
   padding: 0 15px;
   border-bottom: 1px solid #ececec;
+  height: 80px;
 }
+.header--main {
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
 .nav {
   font-weight: 500;
   font-size: 14px;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    // & :not(:last-child) {
-    //   margin-right: 50px;
+  display: flex;
+  align-items: center;
+  & :not(:last-child) {
+    margin-right: 50px;
   }
 }
 .logo {
   color: $accent--color;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
+  margin-right: 50px;
   padding: 24px 0 24px 0;
-  @media screen and (min-width: 1200px) {
-    margin-right: 50px;
+  @media (min-width: 1200px) {
+    font-size: 26px;
   }
 
   &__studio {
@@ -66,7 +77,9 @@ header {
   font-size: 14px;
   letter-spacing: 0.02em;
   fill: currentColor;
-  @media screen and (min-width: 786px) {
+  padding-top: 21px;
+  margin-left: 84px;
+  @media (min-width: 1200px) {
     display: flex;
   }
 }
@@ -74,14 +87,13 @@ header {
   margin-right: 10px;
 }
 .contact__link {
-  padding-bottom: 32px;
-  padding-top: 32px;
+  display: flex;
+  align-items: center;
   transition: color $cubik 250ms, fill $cubik 250ms;
   margin-right: 10px;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
+  margin-bottom: 10px;
+  //   padding-bottom: 32px;
+  // padding-top: 32px;
 
   &:focus,
   &:hover {
