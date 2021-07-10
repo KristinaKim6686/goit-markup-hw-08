@@ -34,7 +34,7 @@
   background-color: inherit;
   border: none;
   fill: $title--color;
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
