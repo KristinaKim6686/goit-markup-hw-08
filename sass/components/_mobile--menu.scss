@@ -34,6 +34,9 @@
   background-color: inherit;
   border: none;
   fill: $title--color;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .menu-close {
   position: absolute;

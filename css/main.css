@@ -1215,6 +1215,12 @@ header {
   fill: #212121;
 }
 
+@media (max-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
 .menu-close {
   position: absolute;
   top: 21px;
