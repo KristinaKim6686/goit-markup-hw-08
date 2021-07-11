@@ -497,12 +497,14 @@ footer {
 
 .modal {
   position: absolute;
+  max-width: 450px;
+  width: 90vw;
+  max-height: 609px;
+  height: 90vh;
   align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 90vh;
-  min-height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
 }
@@ -523,14 +525,11 @@ footer {
 }
 
 .form {
-  width: 90vw;
-  max-width: 370px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 0;
-  margin: auto;
+  margin: 40px;
 }
 
 .form__label {
