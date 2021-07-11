@@ -1179,6 +1179,7 @@ header {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  font-weight: 500;
 }
 
 .mobile-menu.is-hidden {
