@@ -1231,7 +1231,7 @@ header {
 }
 
 .mobile__nav {
-  font-size: 40px;
+  font-size: 8vh;
   color: #212121;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -1241,7 +1241,7 @@ header {
 }
 
 .mobile__contacts {
-  font-size: 34px;
+  font-size: 5vh;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -1250,7 +1250,7 @@ header {
 }
 
 .mobile__link {
-  font-size: 24px;
+  font-size: 3vh;
   margin-top: 32px;
 }
 
@@ -1258,7 +1258,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 2vh;
   color: #2196f3;
   margin-top: 64px;
 }
