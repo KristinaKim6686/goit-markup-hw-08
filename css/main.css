@@ -493,14 +493,13 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+  overflow-y: scroll;
 }
 
 .modal {
   position: absolute;
   max-width: 450px;
   width: 90vw;
-  max-height: 609px;
-  height: 90vh;
   align-items: center;
   top: 50%;
   left: 50%;
@@ -1231,7 +1230,7 @@ header {
 }
 
 .mobile__nav {
-  font-size: 8vh;
+  font-size: 7vh;
   color: #212121;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -1250,7 +1249,7 @@ header {
 }
 
 .mobile__link {
-  font-size: 3vh;
+  font-size: 2vh;
   margin-top: 32px;
 }
 

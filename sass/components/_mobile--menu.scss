@@ -48,7 +48,7 @@
   fill: $title--color;
 }
 .mobile__nav {
-  font-size: 8vh;
+  font-size: 7vh;
   color: $title--color;
   transition: $cubik 250ms;
   &:focus,
@@ -65,7 +65,7 @@
   }
 }
 .mobile__link {
-  font-size: 3vh;
+  font-size: 2vh;
   margin-top: 32px;
 }
 .mobile__socials {

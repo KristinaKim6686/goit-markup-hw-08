@@ -7,13 +7,13 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: $cubik 500ms;
+  overflow-y: scroll;
 }
 .modal {
   position: absolute;
   max-width: 450px;
   width: 90vw;
-  max-height: 609px;
-  height: 90vh;
+
   align-items: center;
   top: 50%;
   left: 50%;
